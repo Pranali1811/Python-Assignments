@@ -1,0 +1,10 @@
+import pandas as pd
+df = pd.read_csv('student_performance_ml.csv')
+avg_study_hours = df['StudyHours'].mean()
+avg_attendance = df['Attendance'].mean()
+max_previous_score = df['PreviousScore'].max()
+min_sleep_hours = df['SleepHours'].min()
+print(f"Average StudyHours: {avg_study_hours:.2f}")
+print(f"Average Attendance: {avg_attendance:.2f}%")
+print(f"Maximum PreviousScore: {max_previous_score}")
+print(f"Minimum SleepHours: {min_sleep_hours}")
